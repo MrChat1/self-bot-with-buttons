@@ -13,7 +13,7 @@ client.on('ready', async () => {
     var end_hrs = 0
     var end_secs = 0
     const customactivity = new CustomStatus()
-    .setState("Ищу активных модераторов") // Пользовательский статус (из дискорд клиента)
+    .setState("Ваш текст") // Пользовательский статус (из дискорд клиента)
     
     const r = new RichPresence(client)
 	.setAssetsLargeImage("mp: attachments/1068155855691849781/1078268575258791946/garfield-lasagna-_1_.gif") // Картинка
@@ -21,10 +21,10 @@ client.on('ready', async () => {
     .setType("STREAMING") 
     .setURL("https://youtube.com/watch?v=U8RUe_lCbJY")
     .setApplicationId(234395307759108106) // Можешь не менять, это Groovy
-    .addButton("Discord", "https://discord.gg/restplace") // Кнопки
-    .addButton("Telegram","https://t.me/mr4at1") // Кнопки
+    .addButton("Ваш текст", "Ваша ссылка") // Кнопки
+    .addButton("Ваш текст","Ваша ссылка") // Кнопки
     .setName("Twitch") // Строка где "Стримит на <name>"
-	.setDetails('Owner of RestPlace') // Белый текст сверху
+	.setDetails('Ваш текст') // Белый текст сверху
     
     while(true) {
        let relc = client.relationships.incomingCache.size
@@ -36,4 +36,4 @@ client.on('ready', async () => {
 
 
 // Connection with Token in environment variables
-client.login('NzAxODY2OTkyMTY0MTQzMTU0.GHE6gm.KM41WPZ31enUHZJFTgESRLqGlEYqVuNVOGhB7Y'); // Token
+client.login('тут ваш токен'); // Token
